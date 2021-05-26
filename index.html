@@ -5,19 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
         <!-- HEADER -->
         <header>
-            <img src="" alt="" />
-            <nav class="menu"></nav>
+            <picture>
+                <source
+                srcset="
+                  img/smartphone/acantilado.jpg 1x,
+                  img/smartphone/acantilado@2x.jpg 2x,
+                  img/smartphone/acantilado@3x.jpg 3x
+                "
+                media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+              />
+              <!-- escritorio -->
+              <source
+                srcset="
+                  img/desktop/flor_azul.jpg    1x,
+                  img/desktop/flor_azul@2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <!-- Imagen de respaldo -->
+              <img class="banner" src="" alt="acantilados de Dublin y flor azul" />
+            </picture>
+            <img src="" alt="">
+            </picture>
         </header>
         <!-- MAIN -->
         <main></main>
         <!-- FOOTER -->
         <footer>
-            <h6 class="copy">&copy;Copyright</h6>
+            
         </footer>
     </body>
 </html>
